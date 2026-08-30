@@ -12,8 +12,22 @@
 
 规则：
 
-- 一次只交给Codex一个Task。
+- 默认一次只交给Codex一个Task。
 - 完成后使用独立Review Agent审查。
 - Review通过后再进入下一Task。
 - 不允许Codex自动连续执行后续Task。
 - 每次都以`V6_MASTER_BLUEPRINT_FINAL.md`、`V6_VERTICAL_SLICE_SPEC.md`、`V6_ARCHITECTURE.md`、`AGENTS.md`为上位约束。
+
+## 安全并行规则
+
+只有Task同时满足以下全部条件时，才允许显式并行：
+
+1. `status == READY`
+2. 所有`depends_on`均为`DONE`
+3. `parallel_safe == true`
+4. 不存在明显文件所有权冲突
+5. 不存在共享公共接口冲突
+
+`READY`不代表必须并行。多个`QUEUED` Task不得因为“看起来独立”而自动并发执行，Agent也不得未经依赖分析自动连续执行后续Task。
+
+并行Builder必须各自使用独立Branch和Git Worktree。Task依赖和状态以`tasks/TASKS.yaml`为准；其中`TASK-005`依赖`TASK-004`，二者当前不得并行。

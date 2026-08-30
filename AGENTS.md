@@ -789,3 +789,63 @@ Change Request。
 而是：
 
 # “这是我自己查出来的。”
+
+---
+
+# 43. Agent Roles
+
+工程任务使用以下三个明确角色：
+
+- Builder：读取Task与相关规格，检查现有实现，完成最小范围修改、测试、验证、diff检查和结果报告。详见`agents/BUILDER.md`。
+- Reviewer：默认只读，独立核对Task、实现、测试、架构、范围和冻结规格。详见`agents/REVIEWER.md`。
+- Integrator：只负责最新main与集成验证、CI就绪和合并准备度。详见`agents/INTEGRATOR.md`。
+
+Builder不得自行宣布最终Integration PASS，也不得自动执行后续Task。
+
+---
+
+# 44. Verification Contract
+
+任何实现型Task完成前必须运行：
+
+```bash
+pnpm verify
+```
+
+`pnpm verify`是本地与CI Quality Job共享的单一质量入口。
+
+Windows PowerShell如果因执行策略阻止`pnpm.ps1`，使用同一安装提供的：
+
+```powershell
+pnpm.cmd verify
+```
+
+不得为此修改系统执行策略。仓库与CI的规范命令仍为`pnpm verify`。
+
+涉及用户可操作流程、Integration Gate或高风险变更时，还必须运行：
+
+```bash
+pnpm e2e
+```
+
+不得用部分子命令通过代替完整验证通过。
+
+---
+
+# 45. Multi-Agent Rule
+
+默认仍然一次执行一个Task。只有`tasks/TASKS.yaml`中的依赖、状态和`parallel_safe`允许，且不存在文件所有权或公共接口冲突时，才可显式并行。
+
+多个Builder不得共享同一Working Tree。并行开发必须遵循：
+
+```text
+1 Task
+=
+1 Branch
+=
+1 Isolated Worktree
+=
+1 Builder
+```
+
+`READY`不等于必须并行。Agent不得因多个Task处于`QUEUED`或看起来独立而自行并发，也不得自动连续执行后续Task。
