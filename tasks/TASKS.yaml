@@ -1,6 +1,14 @@
 version: 1
 
 tasks:
+  TASK-INFRA-001:
+    title: Agentic SDLC Foundation V1
+    spec: TASK_INFRA_001_AGENTIC_SDLC_FOUNDATION.md
+    status: DONE
+    depends_on: []
+    risk: high
+    parallel_safe: false
+
   TASK-001:
     title: Repository Bootstrap
     spec: TASK_001_REPOSITORY_BOOTSTRAP.md
