@@ -1,0 +1,10 @@
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+pnpm-lock.yaml
+AGENTS.md
+V6_*.md
+TASK_*.md
+README_TASKS.md
