@@ -1,0 +1,46 @@
+version: 1
+
+tasks:
+  TASK-001:
+    title: Repository Bootstrap
+    spec: TASK_001_REPOSITORY_BOOTSTRAP.md
+    status: DONE
+    depends_on: []
+    risk: medium
+    parallel_safe: false
+
+  TASK-002:
+    title: Case Runtime V0
+    spec: TASK_002_CASE_RUNTIME_V0.md
+    status: DONE
+    depends_on:
+      - TASK-001
+    risk: high
+    parallel_safe: false
+
+  TASK-003:
+    title: Investigation Core V0
+    spec: TASK_003_INVESTIGATION_CORE_V0.md
+    status: DONE
+    depends_on:
+      - TASK-002
+    risk: high
+    parallel_safe: false
+
+  TASK-004:
+    title: Walking Skeleton
+    spec: TASK_004_WALKING_SKELETON.md
+    status: READY
+    depends_on:
+      - TASK-003
+    risk: high
+    parallel_safe: false
+
+  TASK-005:
+    title: CASE01 Greybox
+    spec: TASK_005_CASE01_GREYBOX.md
+    status: BLOCKED
+    depends_on:
+      - TASK-004
+    risk: high
+    parallel_safe: false

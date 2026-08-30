@@ -11,12 +11,14 @@
     "dev": "pnpm --filter @universe-investigator/web dev",
     "typecheck": "pnpm typecheck:tools && pnpm -r typecheck",
     "typecheck:tools": "tsc -p tsconfig.tools.json",
-    "lint": "node scripts/check-package-boundaries.mjs && eslint . --max-warnings 0",
+    "architecture:check": "node scripts/check-package-boundaries.mjs && node scripts/check-source-boundaries.mjs",
+    "lint": "eslint . --max-warnings 0",
     "format": "prettier --write .",
-    "format:check": "prettier --check .",
+    "format:check": "prettier --check . --end-of-line auto",
     "test": "vitest run",
     "e2e": "playwright test",
-    "build": "pnpm -r build"
+    "build": "pnpm -r build",
+    "verify": "pnpm format:check && pnpm architecture:check && pnpm lint && pnpm typecheck && pnpm test && pnpm build"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.0",
