@@ -1,0 +1,15 @@
+{
+  "name": "@universe-investigator/core",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "exports": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "pnpm typecheck:src && pnpm typecheck:test && pnpm typecheck:boundaries",
+    "typecheck:src": "tsc -p tsconfig.json",
+    "typecheck:test": "tsc -p tsconfig.test.json",
+    "typecheck:boundaries": "tsc -p tsconfig.boundaries.json",
+    "build": "tsc -p tsconfig.json"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "universe-investigator",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.24.0",
+  "engines": {
+    "node": "^22.13.0 || >=24.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @universe-investigator/web dev",
+    "typecheck": "pnpm typecheck:tools && pnpm -r typecheck",
+    "typecheck:tools": "tsc -p tsconfig.tools.json",
+    "lint": "node scripts/check-package-boundaries.mjs && eslint . --max-warnings 0",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "e2e": "playwright test",
+    "build": "pnpm -r build"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.0",
+    "@playwright/test": "^1.62.0",
+    "@types/node": "^24.0.0",
+    "eslint": "^10.9.0",
+    "globals": "^17.0.0",
+    "prettier": "^3.9.0",
+    "typescript": "^5.9.0",
+    "typescript-eslint": "^8.68.0",
+    "vitest": "^4.1.0"
+  }
+}
