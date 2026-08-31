@@ -4,11 +4,11 @@
 
 执行顺序：
 
-1. `TASK_001_REPOSITORY_BOOTSTRAP.md`
-2. `TASK_002_CASE_RUNTIME_V0.md`
-3. `TASK_003_INVESTIGATION_CORE_V0.md`
-4. `TASK_004_WALKING_SKELETON.md`
-5. `TASK_005_CASE01_GREYBOX.md`
+1. `docs/tasks/product/TASK_001_REPOSITORY_BOOTSTRAP.md`
+2. `docs/tasks/product/TASK_002_CASE_RUNTIME_V0.md`
+3. `docs/tasks/product/TASK_003_INVESTIGATION_CORE_V0.md`
+4. `docs/tasks/product/TASK_004_WALKING_SKELETON.md`
+5. `docs/tasks/product/TASK_005_CASE01_GREYBOX.md`
 
 规则：
 
@@ -16,7 +16,7 @@
 - 完成后使用独立Review Agent审查。
 - Review通过后再进入下一Task。
 - 不允许Codex自动连续执行后续Task。
-- 每次都以`V6_MASTER_BLUEPRINT_FINAL.md`、`V6_VERTICAL_SLICE_SPEC.md`、`V6_ARCHITECTURE.md`、`AGENTS.md`为上位约束。
+- 每次都以`docs/product/V6_MASTER_BLUEPRINT_FINAL.md`、`docs/product/V6_VERTICAL_SLICE_SPEC.md`、`docs/architecture/V6_ARCHITECTURE.md`、`AGENTS.md`为上位约束。
 
 ## 安全并行规则
 

@@ -7,9 +7,9 @@
 
 必须阅读并遵循：
 
-1. `V6_MASTER_BLUEPRINT_FINAL.md`
-2. `V6_VERTICAL_SLICE_SPEC.md`
-3. `V6_ARCHITECTURE.md`
+1. `docs/product/V6_MASTER_BLUEPRINT_FINAL.md`
+2. `docs/product/V6_VERTICAL_SLICE_SPEC.md`
+3. `docs/architecture/V6_ARCHITECTURE.md`
 4. 当前任务相关CASE Spec
 5. 当前Task描述
 
