@@ -24,6 +24,7 @@
 
 ## Navigation
 
+- [Approved Architecture Design Freeze V1](AEGF_DESIGN_FREEZE_V1.md)
 - [Framework overview](core/GOVERNANCE_FRAMEWORK_OVERVIEW.md)
 - [Core governance modules](core/)
 - [Reusable profile models](profiles/)

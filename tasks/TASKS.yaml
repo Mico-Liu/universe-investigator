@@ -9,6 +9,15 @@ tasks:
     risk: high
     parallel_safe: false
 
+  TASK-INFRA-001A:
+    title: Agentic Governance Contracts & Deterministic Foundation V1
+    spec: docs/tasks/infra/TASK_INFRA_001A_AGENTIC_GOVERNANCE_CONTRACTS_V1.md
+    status: READY
+    depends_on:
+      - TASK-INFRA-001
+    risk: high
+    parallel_safe: false
+
   TASK-001:
     title: Repository Bootstrap
     spec: docs/tasks/product/TASK_001_REPOSITORY_BOOTSTRAP.md

@@ -1,10 +1,16 @@
 # AEGF Roadmap
 
-## INFRA-001A — Governance Core & Project Profile V1
+## INFRA-001A — Agentic Governance Contracts & Deterministic Foundation V1
 
-优先：Task Contract、Risk、Architecture Governance、Review/Retry、Acceptance Freeze、Evidence/State、DoD、Delivery、Design Pressure、Human Attention、Basic Event/Timing、Project Profile。
+实现 canonical schemas/contracts、Task Contract V2、Project Profile V1、Profile composition、risk/assurance 与 architecture-impact routing、Architecture Pressure、review/retry/failure taxonomy、Acceptance Freeze、Event/Evidence/Capability/Human Attention/timing/state-transition contracts、deterministic validators、当前项目 adapter 与 focused regression tests。
 
-不做：具体技术标准、Full Context Router、AI Test Planner、Parallel Scheduler、Dashboard、Published Package。
+不激活 runtime Event/Evidence persistence、State projector 或 DONE evaluator。
+
+## INFRA-001B — Evidence State & Completion Foundation V1
+
+在 INFRA-001A 完成交付后，实现 append-only Event/Evidence repository adapter、legal State projection、recoverable/terminal failure、DONE evaluator、timing/KPI projection、Human Attention deduplication 与 capability waiting/resume projection。先 shadow validation，再单独批准 activation。
+
+仍不实现 automatic resume scheduler、full Delivery automation、PR/CI/Merge orchestration 或 dashboard。
 
 ## INFRA-002 — Context, Token & Validation Efficiency
 

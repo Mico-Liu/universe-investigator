@@ -33,6 +33,36 @@ Skill / MCP / CLI / Script / Agent / CI / External API
 
 Kernel 定义“需要什么能力”，Capability Layer 决定“由谁执行”。
 
+Capability execution is orthogonal to L0–L5. It does not introduce another policy authority. Runtime Evidence reports facts; the Control Plane is a derived view only.
+
+## Runtime Repository Information Architecture
+
+Runtime machine artifacts must not be mixed with human-readable documentation.
+
+```text
+governance/
+├─ schemas/
+├─ profiles/
+└─ runtime/
+   ├─ events/
+   └─ evidence/
+
+tasks/
+├─ registry.json
+└─ contracts/
+
+scripts/
+└─ governance/
+   ├─ validators/
+   ├─ evaluators/
+   ├─ project-adapters/
+   └─ tests/
+```
+
+Schemas, normalized Profiles, registry, and Task Contracts are version-controlled. Event streams and Evidence manifests are append-only and machine-owned; large Evidence artifacts are referenced by URI and digest.
+
+`tasks/TASKS.yaml` remains authoritative until INFRA-001A validates deterministic equivalence and an approved cutover gate replaces it with `tasks/registry.json`. Dual authority is forbidden. Runtime Event/Evidence persistence, State projection, and DONE activation remain INFRA-001B responsibilities.
+
 ## Implementation Strategy
 
 ```text
