@@ -384,9 +384,9 @@ pnpm build
 本任务不得修改：
 
 - `AGENTS.md`
-- `V6_MASTER_BLUEPRINT_FINAL.md`
-- `V6_VERTICAL_SLICE_SPEC.md`
-- `V6_ARCHITECTURE.md`
+- `docs/product/V6_MASTER_BLUEPRINT_FINAL.md`
+- `docs/product/V6_VERTICAL_SLICE_SPEC.md`
+- `docs/architecture/V6_ARCHITECTURE.md`
 
 如果发现无法由本任务范围澄清解决的真实冲突，必须停止实现并提交 Change Request，不得自行修改冻结规格。
 

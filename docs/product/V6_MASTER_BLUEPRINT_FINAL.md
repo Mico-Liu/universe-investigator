@@ -2779,9 +2779,9 @@ Vertical Slice首先实现：
 默认只读取：
 
 ```text
-V6_MASTER_BLUEPRINT_FINAL.md
+docs/product/V6_MASTER_BLUEPRINT_FINAL.md
 AGENTS.md
-V6_ARCHITECTURE.md
+docs/architecture/V6_ARCHITECTURE.md
 当前CASE SPEC
 当前TASK
 ```

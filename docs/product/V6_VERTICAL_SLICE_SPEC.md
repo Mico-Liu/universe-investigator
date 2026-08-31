@@ -2,7 +2,7 @@
 # 《宇宙科学调查局》V6.1
 ## Vertical Slice 产品与内容实施规格 V1.0
 
-**上位文档：** `V6_MASTER_BLUEPRINT_FINAL.md`  
+**上位文档：** `docs/product/V6_MASTER_BLUEPRINT_FINAL.md`
 **状态：** FROZEN FOR IMPLEMENTATION  
 **目的：** 定义第一个真正可玩的产品必须包含什么，以及明确不包含什么。
 

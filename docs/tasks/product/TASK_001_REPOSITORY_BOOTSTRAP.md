@@ -4,9 +4,9 @@
 
 **状态：READY FOR CODEX**  
 **前置文档：**
-1. `V6_MASTER_BLUEPRINT_FINAL.md`
-2. `V6_VERTICAL_SLICE_SPEC.md`
-3. `V6_ARCHITECTURE.md`
+1. `docs/product/V6_MASTER_BLUEPRINT_FINAL.md`
+2. `docs/product/V6_VERTICAL_SLICE_SPEC.md`
+3. `docs/architecture/V6_ARCHITECTURE.md`
 4. `AGENTS.md`
 
 ---
@@ -38,15 +38,26 @@ universe-investigator/
 │  └─ content/
 │
 ├─ docs/
+│  ├─ product/
+│  │  ├─ V6_MASTER_BLUEPRINT_FINAL.md
+│  │  └─ V6_VERTICAL_SLICE_SPEC.md
+│  ├─ architecture/
+│  │  └─ V6_ARCHITECTURE.md
+│  ├─ governance/
+│  ├─ engineering/
+│  └─ tasks/
 │
+├─ architecture-standards/
+├─ project-governance/
+├─ tasks/
+├─ agents/
+├─ scripts/
 ├─ .github/
 │  └─ workflows/
 │
 ├─ AGENTS.md
 ├─ README.md
-├─ V6_MASTER_BLUEPRINT_FINAL.md
-├─ V6_VERTICAL_SLICE_SPEC.md
-├─ V6_ARCHITECTURE.md
+├─ README_TASKS.md
 ├─ package.json
 ├─ pnpm-workspace.yaml
 └─ tsconfig.base.json
@@ -438,13 +449,14 @@ README只需要：
 
 ```text
 docs/
-├─ DECISIONS.md
-└─ DEVELOPMENT.md
+└─ engineering/
+   ├─ DECISIONS.md
+   └─ DEVELOPMENT.md
 ```
 
 ---
 
-## DECISIONS.md
+## docs/engineering/DECISIONS.md
 
 第一条ADR-lite：
 
@@ -466,7 +478,7 @@ Core与Simulation保持纯TypeScript。
 
 ---
 
-## DEVELOPMENT.md
+## docs/engineering/DEVELOPMENT.md
 
 记录：
 

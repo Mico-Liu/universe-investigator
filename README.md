@@ -31,13 +31,12 @@ apps/web             React + R3F 表现层
 packages/core        纯 TypeScript 领域包骨架
 packages/simulation  纯 TypeScript 科学模拟包骨架
 packages/content     数据与运行时校验包骨架
-docs                 开发与决策记录
+docs                 长期文档与规范入口
 ```
 
 ## 文档入口
 
-- `V6_MASTER_BLUEPRINT_FINAL.md`
-- `V6_VERTICAL_SLICE_SPEC.md`
-- `V6_ARCHITECTURE.md`
-- `AGENTS.md`
-- `docs/DEVELOPMENT.md`
+- [`docs/README.md`](docs/README.md)
+- [`AGENTS.md`](AGENTS.md)
+- [`README_TASKS.md`](README_TASKS.md)
+- [`docs/engineering/DEVELOPMENT.md`](docs/engineering/DEVELOPMENT.md)

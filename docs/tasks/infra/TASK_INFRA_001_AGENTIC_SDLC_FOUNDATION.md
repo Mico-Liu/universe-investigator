@@ -39,15 +39,15 @@
 开始前必须完整阅读并遵循：
 
 1. `AGENTS.md`
-2. `V6_MASTER_BLUEPRINT_FINAL.md`
-3. `V6_VERTICAL_SLICE_SPEC.md`
-4. `V6_ARCHITECTURE.md`
+2. `docs/product/V6_MASTER_BLUEPRINT_FINAL.md`
+3. `docs/product/V6_VERTICAL_SLICE_SPEC.md`
+4. `docs/architecture/V6_ARCHITECTURE.md`
 5. `README_TASKS.md`
 6. `package.json`
 7. `.github/workflows/ci.yml`
 8. `scripts/check-package-boundaries.mjs`
-9. `TASK_004_WALKING_SKELETON.md`
-10. `TASK_005_CASE01_GREYBOX.md`
+9. `docs/tasks/product/TASK_004_WALKING_SKELETON.md`
+10. `docs/tasks/product/TASK_005_CASE01_GREYBOX.md`
 
 如果发现本 Task 与上位规格存在冲突：
 
@@ -311,7 +311,7 @@ version: 1
 tasks:
   TASK-001:
     title: Repository Bootstrap
-    spec: TASK_001_REPOSITORY_BOOTSTRAP.md
+    spec: docs/tasks/product/TASK_001_REPOSITORY_BOOTSTRAP.md
     status: DONE
     depends_on: []
     risk: medium
@@ -319,7 +319,7 @@ tasks:
 
   TASK-002:
     title: Case Runtime V0
-    spec: TASK_002_CASE_RUNTIME_V0.md
+    spec: docs/tasks/product/TASK_002_CASE_RUNTIME_V0.md
     status: DONE
     depends_on:
       - TASK-001
@@ -328,7 +328,7 @@ tasks:
 
   TASK-003:
     title: Investigation Core V0
-    spec: TASK_003_INVESTIGATION_CORE_V0.md
+    spec: docs/tasks/product/TASK_003_INVESTIGATION_CORE_V0.md
     status: DONE
     depends_on:
       - TASK-002
@@ -337,7 +337,7 @@ tasks:
 
   TASK-004:
     title: Walking Skeleton
-    spec: TASK_004_WALKING_SKELETON.md
+    spec: docs/tasks/product/TASK_004_WALKING_SKELETON.md
     status: READY
     depends_on:
       - TASK-003
@@ -346,7 +346,7 @@ tasks:
 
   TASK-005:
     title: CASE01 Greybox
-    spec: TASK_005_CASE01_GREYBOX.md
+    spec: docs/tasks/product/TASK_005_CASE01_GREYBOX.md
     status: BLOCKED
     depends_on:
       - TASK-004
@@ -706,7 +706,7 @@ agents/REVIEWER.md
 agents/INTEGRATOR.md
 tasks/TASKS.yaml
 scripts/check-source-boundaries.mjs
-TASK_INFRA_001_AGENTIC_SDLC_FOUNDATION.md
+docs/tasks/infra/TASK_INFRA_001_AGENTIC_SDLC_FOUNDATION.md
 ```
 
 如需要测试 Architecture Guard，可以新增：
@@ -733,14 +733,14 @@ packages/content/src/**
 不得修改：
 
 ```text
-V6_MASTER_BLUEPRINT_FINAL.md
-V6_VERTICAL_SLICE_SPEC.md
-V6_ARCHITECTURE.md
-TASK_001_REPOSITORY_BOOTSTRAP.md
-TASK_002_CASE_RUNTIME_V0.md
-TASK_003_INVESTIGATION_CORE_V0.md
-TASK_004_WALKING_SKELETON.md
-TASK_005_CASE01_GREYBOX.md
+docs/product/V6_MASTER_BLUEPRINT_FINAL.md
+docs/product/V6_VERTICAL_SLICE_SPEC.md
+docs/architecture/V6_ARCHITECTURE.md
+docs/tasks/product/TASK_001_REPOSITORY_BOOTSTRAP.md
+docs/tasks/product/TASK_002_CASE_RUNTIME_V0.md
+docs/tasks/product/TASK_003_INVESTIGATION_CORE_V0.md
+docs/tasks/product/TASK_004_WALKING_SKELETON.md
+docs/tasks/product/TASK_005_CASE01_GREYBOX.md
 ```
 
 不得：

@@ -2,8 +2,8 @@
 # 《宇宙科学调查局》V6.1
 ## 单人 + Codex 技术架构规范 V1.0
 
-**上位文档：** `V6_MASTER_BLUEPRINT_FINAL.md`  
-**直接业务输入：** `V6_VERTICAL_SLICE_SPEC.md`  
+**上位文档：** `docs/product/V6_MASTER_BLUEPRINT_FINAL.md`
+**直接业务输入：** `docs/product/V6_VERTICAL_SLICE_SPEC.md`
 **状态：** IMPLEMENTATION BASELINE
 
 ---
@@ -88,12 +88,24 @@ universe-investigator/
 │   └── content/
 │
 ├── docs/
+│   ├── product/
+│   │   ├── V6_MASTER_BLUEPRINT_FINAL.md
+│   │   └── V6_VERTICAL_SLICE_SPEC.md
+│   ├── architecture/
+│   │   └── V6_ARCHITECTURE.md
+│   ├── governance/
+│   ├── engineering/
+│   └── tasks/
 │
+├── architecture-standards/
+├── project-governance/
+├── tasks/
+├── agents/
+├── scripts/
+├── .github/
 ├── AGENTS.md
 ├── README.md
-├── V6_MASTER_BLUEPRINT_FINAL.md
-├── V6_VERTICAL_SLICE_SPEC.md
-└── V6_ARCHITECTURE.md
+└── README_TASKS.md
 ```
 
 ---

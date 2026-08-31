@@ -16,7 +16,7 @@
 
 本任务实现的是 CaseRuntime v0，而不是最终完整调查流程状态机。
 
-`V6_ARCHITECTURE.md` 中出现的长期完整调查阶段包括：
+`docs/architecture/V6_ARCHITECTURE.md` 中出现的长期完整调查阶段包括：
 
 - briefing
 - detecting
@@ -49,7 +49,7 @@ TASK 002 的 CaseRuntime v0 顶层状态明确限制为：
 
 只有当后续真实 Case 用例证明需要独立生命周期语义时，才通过新的 Task / Change Request 将其提升为顶层状态。
 
-因此，TASK 002 实现 6 状态 CaseRuntime v0 与 `V6_ARCHITECTURE.md` 的长期模型并不冲突；这是明确的阶段性范围收缩。
+因此，TASK 002 实现 6 状态 CaseRuntime v0 与 `docs/architecture/V6_ARCHITECTURE.md` 的长期模型并不冲突；这是明确的阶段性范围收缩。
 
 本任务不得为了“提前兼容未来”增加额外状态、通用状态机框架、插件机制或额外抽象层。
 
@@ -252,9 +252,9 @@ pnpm build
 本任务不得修改：
 
 - `AGENTS.md`
-- `V6_MASTER_BLUEPRINT_FINAL.md`
-- `V6_VERTICAL_SLICE_SPEC.md`
-- `V6_ARCHITECTURE.md`
+- `docs/product/V6_MASTER_BLUEPRINT_FINAL.md`
+- `docs/product/V6_VERTICAL_SLICE_SPEC.md`
+- `docs/architecture/V6_ARCHITECTURE.md`
 
 如果发现无法由本任务“架构范围澄清”解决的真实冲突，停止实现并提交 Change Request，不得自行改变冻结规格。
 
